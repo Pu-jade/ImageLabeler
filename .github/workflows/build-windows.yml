@@ -26,7 +26,7 @@ jobs:
       # 方案A：更稳的目录模式（推荐先用这个）
       - name: Build (onedir, windowed)
         run: |
-          python -m PyInstaller --noconfirm --clean --windowed --name ImageLabeler app.py
+          python -m PyInstaller --noconfirm --clean --windowed --name --onefile ImageLabeler app.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
